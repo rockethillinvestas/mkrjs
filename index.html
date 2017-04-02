@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bulma/css/bulma.css" />
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="columns">
+        <div class="column" id="svgViewer">
+            <div id="drop-zone">
+                <div id="drag-file">
+                    <p id="status-text">Dra filer her</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div id="file-choose">
+                <p id="file-text">Eller velg en fil</p>
+                <a class="button" id="upload-btn"> Last opp</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="columns">
+        <div class="column" id="svgTools">
+        </div>
+    </div>
+</body>
+<script>
+    require('./src/drop.js');
+
+</script>
+<!-- <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>-->
+
+</html>
